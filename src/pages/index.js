@@ -1,22 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
+import { css } from "@emotion/core"
+import { graphql } from "gatsby"
+// import { rhythm } from "../utils/typography"
+import Header from "../components/header/header"
+// import Layout from "../components/layout"
+// import Img from "gatsby-image"
+import "../components/layout.css"
+import Bio from "../components/bio/bio"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+function index() {
+  return (
+  <div>
+    <Header />
+      <h1
+        css={css`
+          display: inline-block;
+          border-bottom: 1px solid;
+        `}
+      >
+        Bronwyn Achemedei
+      </h1>
+      <Bio></Bio>
+  </div>
+  )
+}
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+export default index
 
-export default IndexPage
