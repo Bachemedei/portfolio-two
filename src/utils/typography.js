@@ -2,7 +2,10 @@ import Typography from "typography"
 import wordpress2014Theme from "typography-theme-wordpress-2014"
 
 wordpress2014Theme.overrideThemeStyles = ({ rhythm }, options) => ({
-    'a': {color: "#000000"}
+    'a': {
+      color: "#000000",
+      textDecoration: "none"
+    }
   })
 
 const typography = new Typography(wordpress2014Theme)

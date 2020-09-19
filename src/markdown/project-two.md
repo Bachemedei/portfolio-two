@@ -1,7 +1,7 @@
 ---
-title: "bio"
-project: false
-featured: false
+title: "Project Two"
+project: true
+featured: true
 featuredImage: ../images/project2.png
 ---
 
