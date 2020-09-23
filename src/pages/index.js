@@ -25,7 +25,7 @@ function Index({ data }) {
       >
         Bronwyn Achemedei
       </h1>
-      <Bio data={data}></Bio>
+      <Bio />
       <h2 className="projects-title">Projects</h2>
       <div className={onHover ? "img-hover" : "img-no-hover"}>
         <img
@@ -46,27 +46,27 @@ function Index({ data }) {
 
 export default Index
 
-export const query = graphql`
-  query {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            featured
-            featuredImage {
-              childImageSharp {
-                fluid(maxWidth: 200) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            project
-            title
-          }
-          rawMarkdownBody
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     allMarkdownRemark {
+//       edges {
+//         node {
+//           id
+//           frontmatter {
+//             featured
+//             featuredImage {
+//               childImageSharp {
+//                 fluid(maxWidth: 200) {
+//                   ...GatsbyImageSharpFluid
+//                 }
+//               }
+//             }
+//             project
+//             title
+//           }
+//           rawMarkdownBody
+//         }
+//       }
+//     }
+//   }
+// `

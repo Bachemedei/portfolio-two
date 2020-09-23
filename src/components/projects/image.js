@@ -1,14 +1,39 @@
 import React, { useState } from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import "./projects.css"
 import Img from "gatsby-image"
 
 function ProfileImage({ data, onHover }) {
   console.log(onHover)
+  const profileData = useStaticQuery(graphql`
+    query NonPageQuery {
+      allMarkdownRemark(filter: { frontmatter: { project: { eq: true } } }) {
+        edges {
+          node {
+            id
+            frontmatter {
+              featured
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 200) {
+                    src
+                  }
+                }
+              }
+              project
+              title
+            }
+            rawMarkdownBody
+          }
+        }
+      }
+    }
+  `)
 
   //Template
   return (
     <div className="all-imgs">
-      {data.allMarkdownRemark.edges.map(({ node }) => (
+      {/* {data.allMarkdownRemark.edges.map(({ node }) => (
         <Img
         //   onMouseEnter={() => setHover(true)}
         //   onMouseLeave={() => setHover(false)}
@@ -16,7 +41,7 @@ function ProfileImage({ data, onHover }) {
           fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
           key={node.id}
         />
-      ))}
+      ))} */}
     </div>
   )
 }
