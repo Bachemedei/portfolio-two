@@ -10,10 +10,10 @@ function Header() {
         <Link to={`/`}>Home</Link>
       </div>
       <div className="nav-links">
-        <Link className="portfolio-link" to={`/portfolio/`}>
+        <Link className="portfolio-link" to={`/portfolio`}>
           Portfolio
         </Link>
-        <Link className="contact-link" to={`contact`}>
+        <Link className="contact-link" to={`/contact`}>
           Contact
         </Link>
       </div>

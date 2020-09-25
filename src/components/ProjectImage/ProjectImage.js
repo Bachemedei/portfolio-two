@@ -1,12 +1,12 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import "./projects.css"
+import "./ProjectImage.css"
 import Img from "gatsby-image"
 
-function ProfileImage({ data, onHover }) {
+function ProjectImage({ onHover }) {
   console.log(onHover)
   const profileData = useStaticQuery(graphql`
-    query NonPageQuery {
+    query ImageQuery {
       allMarkdownRemark(filter: { frontmatter: { project: { eq: true } } }) {
         edges {
           node {
@@ -17,6 +17,10 @@ function ProfileImage({ data, onHover }) {
                 childImageSharp {
                   fluid(maxWidth: 200) {
                     src
+                    aspectRatio
+                    base64
+                    sizes
+                    srcSet
                   }
                 }
               }
@@ -30,20 +34,25 @@ function ProfileImage({ data, onHover }) {
     }
   `)
 
+  const data = profileData.allMarkdownRemark.edges
   //Template
   return (
     <div className="all-imgs">
-      {/* {data.allMarkdownRemark.edges.map(({ node }) => (
-        <Img
-        //   onMouseEnter={() => setHover(true)}
-        //   onMouseLeave={() => setHover(false)}
-          className="img"
-          fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
-          key={node.id}
-        />
-      ))} */}
+      {data.map(({ node }) => (
+        <div className="featured-project">
+          <Img
+            className="img"
+            fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+            key={node.id}
+          />
+          <div className="project-text">
+            <h3>{node.frontmatter.title}</h3>
+            <p>{node.rawMarkdownBody}</p>
+          </div>
+        </div>
+      ))}
     </div>
   )
 }
 
-export default ProfileImage
+export default ProjectImage

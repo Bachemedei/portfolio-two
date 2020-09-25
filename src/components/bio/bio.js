@@ -16,7 +16,7 @@ function Bio() {
       }
     }
   `)
-  console.log(bioData)
+  // console.log(bioData)
   return (
     <div>
       {bioData.allMarkdownRemark.edges.map(({ node }) => (

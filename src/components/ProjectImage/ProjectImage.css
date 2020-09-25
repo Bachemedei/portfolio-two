@@ -1,0 +1,36 @@
+.all-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+all-imgs.img {
+    width: 30vw;
+    position: unset;
+}
+
+.img:hover {
+    opacity: 0.3;
+}
+
+.featured-project {
+    position: relative;
+    width: 30vw;
+    height: 100%;
+    margin: 3vw;
+    color: transparent;
+}
+
+.featured-project:hover {
+    color: black;
+}
+
+
+.project-text {
+    text-align: center;
+    width: 30vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}

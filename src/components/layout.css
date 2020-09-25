@@ -5,7 +5,7 @@ html {
     margin-bottom: 3vw;
 }
 
-.all-imgs {
+/* .all-imgs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -16,6 +16,9 @@ html {
     margin: 3vw;
 }
 
-.img-hover {
+.img:hover {
     opacity: 0.4;
 }
+
+.hoverable:hover img {
+    opacity: 0.5; */
