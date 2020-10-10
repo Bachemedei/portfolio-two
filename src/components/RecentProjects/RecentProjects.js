@@ -43,15 +43,18 @@ function RecentProjects() {
       <div className="recent-projects">
         <div className="project-titles">
           {profileData.map(({ node }, index) => (
-            <h5
-              className={`recent-project-title ${
-                index === projectIndex ? `selected` : ``
-              }`}
-              onClick={() => handleClick(index)}
-              key={index}
-            >
-              {node.frontmatter.title}
-            </h5>
+            <div className="title-wrapper">
+              <h5
+                className={`recent-project-title ${
+                  index === projectIndex ? `selected` : ``
+                }`}
+                onClick={() => handleClick(index)}
+                key={index}
+              >
+                {node.frontmatter.title}
+              </h5>
+              <div className="title-colour"></div>
+            </div>
           ))}
         </div>
         <div className="project-detail">
@@ -67,7 +70,7 @@ function RecentProjects() {
           <AnchorLink
             to={`/#project${profileData[projectIndex].node.frontmatter.project_id}`}
           >
-            <p>Learn more</p>
+            <p className="project-link">Learn more</p>
           </AnchorLink>
         </div>
       </div>

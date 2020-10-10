@@ -9,6 +9,26 @@
 
 .project-title {
   margin-top: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.project-title::after {
+  width: calc(100% + 30px);
+  display: block;
+  content: "";
+  background: #d4a405;
+  margin-top: -0.7rem;
+  margin-left: -10px;
+  height: 0.8rem;
+  z-index: -1;
+  position: absolute;
+}
+
+.project-title:hover::after {
+  transition: 0.3s;
+  margin-top: -2.5rem;
+  height: 4vw;
 }
 
 .img-container .project-img {

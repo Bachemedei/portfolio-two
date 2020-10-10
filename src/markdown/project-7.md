@@ -3,7 +3,7 @@ title: "Earlyadoptr - A Crowdfunding Platform"
 project: true
 summary: false
 project-id: 7
-featuredImage: ../images/project4.png
+featuredImage: ../images/earlyadoptr.png
 language: "Python, Django Rest Framework, ReactJS, CSS"
 url: https://lit-brook-22096.herokuapp.com
 date: "October 2020"

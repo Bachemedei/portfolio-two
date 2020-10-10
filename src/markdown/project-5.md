@@ -3,7 +3,7 @@ title: "News Website with Django"
 project: true
 project-id: 5
 summary: false
-featuredImage: ../images/project4.png
+featuredImage: ../images/django_news.png
 language: "Python, Django"
 url: https://github.com/Bachemedei/django_news
 date: "August 2020"

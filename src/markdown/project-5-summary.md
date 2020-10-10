@@ -1,5 +1,5 @@
 ---
-title: "News Website with Django"
+title: "Django News"
 project: true
 project-id: 5
 summary: true

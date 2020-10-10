@@ -1,5 +1,5 @@
 ---
-title: "Python Weather Data Analysis"
+title: "Python Weather"
 project: true
 project-id: 4
 summary: true

@@ -9,7 +9,9 @@ function Projects({ data }) {
       className={`project ${frontmatter.project_id % 2 === 0 ? `even` : `odd`}`}
       id={`project${frontmatter.project_id}`}
     >
-      <h3 className="project-title">{frontmatter.title}</h3>
+      <div>
+        <h3 className="project-title">{frontmatter.title}</h3>
+      </div>
       <div className="under-title">
         <div className="img-container">
           <Img
