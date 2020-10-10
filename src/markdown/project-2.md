@@ -5,7 +5,7 @@ project: true
 summary: false
 featuredImage: ../images/slackbot.png
 language: "JavaScript, Node JS"
-url: ""
+url: undefined
 date: "November 2019"
 ---
 

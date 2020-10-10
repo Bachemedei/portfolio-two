@@ -5,7 +5,7 @@ project-id: 1
 summary: false
 featuredImage: ../images/shiny.png
 language: "R, R Shiny"
-url: ""
+url: undefined
 date: "October 2019"
 ---
 

@@ -1,17 +1,26 @@
 import React from "react"
 import Img from "gatsby-image"
 import "./projects.css"
+import { Link } from "gatsby"
 
 function Projects({ data }) {
   const { frontmatter, html, id } = data
+  console.log(frontmatter.url)
   return (
     <div
       className={`project ${frontmatter.project_id % 2 === 0 ? `even` : `odd`}`}
       id={`project${frontmatter.project_id}`}
     >
-      <div>
-        <h3 className="project-title">{frontmatter.title}</h3>
-      </div>
+      {frontmatter.url !== "undefined" ? (
+        <a href={frontmatter.url}>
+          <h3 className="project-title">{frontmatter.title}</h3>
+        </a>
+      ) : (
+        <div>
+          <h3 className="project-title">{frontmatter.title}</h3>
+        </div>
+      )}
+
       <div className="under-title">
         <div className="img-container">
           <Img
