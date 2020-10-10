@@ -2,20 +2,23 @@ import React from "react"
 import { Link } from "gatsby"
 import { rhythm } from "../../utils/typography"
 import "./header.css"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 function Header() {
   return (
-    <div className="header">
+    <div className="header sticky-inner">
       <div className="home-link">
-        <Link to={`/`}>Home</Link>
+        <AnchorLink to="/#home">
+          <span>Home</span>
+        </AnchorLink>
       </div>
       <div className="nav-links">
-        <Link className="portfolio-link" to={`/portfolio`}>
+        <AnchorLink className="portfolio-link" to="/#portfolio">
           Portfolio
-        </Link>
-        <Link className="contact-link" to={`/contact`}>
+        </AnchorLink>
+        <AnchorLink className="contact-link" to="/#contact">
           Contact
-        </Link>
+        </AnchorLink>
       </div>
     </div>
   )

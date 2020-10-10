@@ -1,33 +1,40 @@
-import React from "react"
-import { css } from "@emotion/core"
+import React, { Fragement, useState, useEffect, useRef } from "react"
 import Header from "../components/header/header"
 import "../components/layout.css"
-import Bio from "../components/bio/bio"
-import ProjectImage from "../components/ProjectImage/ProjectImage"
-import ButtonLink from "../components/ButtonLink/ButtonLink"
+import About from "../components/About/About"
+import RecentProjects from "../components/RecentProjects/RecentProjects"
 import "./Home.css"
+import AllProjects from "../components/Portfolio/AllProjects"
+import Contact from "../components/Contact/Contact"
 
 function Home() {
   // Variables
+  const [isSticky, setSticky] = useState(false)
+  const ref = useRef(null)
+  const handleScroll = () => {
+    if (ref.current) {
+      setSticky(ref.current.getBoundingClientRect().top <= 0)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+
+    return () => {
+      window.removeEventListener("scroll", () => handleScroll)
+    }
+  }, [])
 
   // Template
   return (
-    <div>
-      <Header />
-      <h1
-        css={css`
-          display: inline-block;
-          border-bottom: 1px solid;
-        `}
-      >
-        Bronwyn Achemedei
-      </h1>
-      <Bio />
-      <h2 className="projects-title">Projects</h2>
-      <div className="featured-projects">
-        <ProjectImage />
-        <ButtonLink value="See More" url="/portfolio/"/>
+    <div id="home">
+      <div className={`sticky-wrapper${isSticky ? " sticky" : ""}`} ref={ref}>
+        <Header />
       </div>
+      <About />
+      <RecentProjects />
+      <AllProjects />
+      <Contact />
     </div>
   )
 }

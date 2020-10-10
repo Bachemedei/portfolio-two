@@ -1,9 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import "./bio.css"
-import { node } from "prop-types"
+import "./About.css"
 
-function Bio() {
+function About() {
   const bioData = useStaticQuery(graphql`
     query NonPageQuery {
       allMarkdownRemark(filter: { frontmatter: { project: { eq: false } } }) {
@@ -18,7 +17,8 @@ function Bio() {
   `)
   // console.log(bioData)
   return (
-    <div>
+    <div className="about">
+      <h1 className="heading">Bronwyn Achemedei</h1>
       {bioData.allMarkdownRemark.edges.map(({ node }) => (
         <p className="bio-text" key={node.id}>
           {node.rawMarkdownBody}
@@ -28,4 +28,4 @@ function Bio() {
   )
 }
 
-export default Bio
+export default About

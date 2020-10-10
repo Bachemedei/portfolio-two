@@ -1,5 +1,77 @@
+h1 {
+  display: inline-block;
+  border-bottom: 0.3vw solid black;
+  font-size: 4vw;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: 0.3vw solid black;
+  font-size: 3vw;
+}
+
+h3 {
+  margin-top: none;
+  font-size: 2.2vw;
+  display: inline-block;
+  border: none;
+}
+
+h4 {
+  margin-top: none;
+  font-size: 1.8vw;
+  display: inline-block;
+  border: none;
+}
+
+h5 {
+  margin-top: none;
+  font-size: 1.3vw;
+  display: inline-block;
+  border: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .featured-projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-image: url("../images/plus-solid.svg");
+}
+
+.sticky-wrapper {
+  position: relative;
+  /* height: 5vw; */
+}
+
+.sticky .sticky-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1vw;
+  padding-left: 13vw;
+  padding-right: 13vw;
+  padding-bottom: 1vw;
+  background-color: white;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1vw;
+  padding-left: 13vw;
+  padding-right: 13vw;
+  padding-bottom: 1vw;
+}
+.portfolio-link {
+  margin-right: 2vw;
 }

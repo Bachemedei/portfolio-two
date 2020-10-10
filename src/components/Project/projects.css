@@ -1,0 +1,25 @@
+.project {
+  padding-bottom: 5vw;
+}
+
+.under-title {
+  display: flex;
+  margin-top: 3vw;
+}
+
+.project-title {
+  margin-top: 0;
+}
+
+.img-container .project-img {
+  width: 25vw;
+  margin-right: 2vw;
+}
+
+.project-content h3 {
+  margin-top: 0;
+}
+
+.project-langage {
+  margin-top: 0;
+}

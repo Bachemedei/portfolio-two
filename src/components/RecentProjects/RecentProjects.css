@@ -1,0 +1,49 @@
+.recent-projects-wrapper {
+  padding-top: 3vw;
+  padding-left: 13vw;
+  padding-right: 13vw;
+  padding-bottom: 3vw;
+}
+
+.recent-projects {
+  margin-top: 5vw;
+  width: 90%;
+  display: flex;
+  height: 30vw;
+}
+
+.project-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  border-left: 1px solid black;
+}
+
+.recent-project-title {
+  cursor: pointer;
+  padding: 1vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.project-detail {
+  flex-grow: 2;
+  width: 70%;
+  padding: 1vw;
+  padding-left: 3vw;
+}
+
+.selected {
+  border-bottom: 1px solid black;
+}
+
+.date {
+  font-weight: 900;
+}
+
+.project-summary {
+  font-weight: 200;
+}
