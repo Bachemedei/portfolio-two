@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 
 function Projects({ data }) {
   const { frontmatter, html, id } = data
-  console.log(frontmatter.url)
   return (
     <div
       className={`project ${frontmatter.project_id % 2 === 0 ? `even` : `odd`}`}

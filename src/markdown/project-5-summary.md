@@ -11,5 +11,3 @@ A dummy news website made with Django. Web development and programming technolog
   * Django
   * OOP
 * HTML & CSS
-
-

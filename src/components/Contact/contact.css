@@ -1,10 +1,3 @@
-.contact {
-  padding-top: 3vw;
-  padding-left: 13vw;
-  padding-right: 13vw;
-  padding-bottom: 3vw;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;

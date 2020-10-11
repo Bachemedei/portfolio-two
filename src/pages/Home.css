@@ -1,7 +1,15 @@
+#home {
+  padding-top: 3vw;
+  padding-left: 13vw;
+  padding-right: 13vw;
+  padding-bottom: 3vw;
+}
+
 h1 {
   display: inline-block;
   border-bottom: 0.3vw solid black;
   font-size: 4vw;
+  margin-top: 1vw;
 }
 
 h2 {
@@ -29,6 +37,14 @@ h5 {
   font-size: 1.3vw;
   display: inline-block;
   border: none;
+}
+
+p {
+  font-size: 1.3vw;
+}
+
+a {
+  font-size: 1.5vw;
 }
 
 a:hover {
@@ -67,11 +83,50 @@ ul {
 .header {
   display: flex;
   justify-content: space-between;
-  padding-top: 1vw;
-  padding-left: 13vw;
-  padding-right: 13vw;
-  padding-bottom: 1vw;
 }
+
 .portfolio-link {
   margin-right: 2vw;
+}
+
+@media (max-width: 800px) {
+  #home {
+    padding-left: 9vw;
+    padding-right: 9vw;
+  }
+  .sticky .sticky-inner {
+    padding-left: 9vw;
+    padding-right: 9vw;
+  }
+
+  h3 {
+    font-size: 2.8vw;
+  }
+
+  h4 {
+    font-size: 2.5vw;
+  }
+
+  h5 {
+    font-size: 2.2vw;
+  }
+
+  a {
+    font-size: 2.5vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 500px) {
+  #home {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .sticky .sticky-inner {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }

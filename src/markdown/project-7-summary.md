@@ -12,4 +12,3 @@ The backend was developed using Django Rest Framework and the frontend was devel
 * React JS (Functional components & Hooks)
 * HTML & CSS
 * Deployment with Heroku
-
