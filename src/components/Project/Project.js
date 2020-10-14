@@ -31,7 +31,7 @@ function Projects({ data }) {
         <div className="project-content">
           <h4 className="project-langage">{frontmatter.language}</h4>
           <div
-            className="project-description"
+            className="project-description html-text"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>

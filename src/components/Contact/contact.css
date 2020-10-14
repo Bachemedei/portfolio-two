@@ -1,5 +1,21 @@
-.contact-form {
+.contact-details {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.contact-logo {
+  margin: 2vw;
+}
+
+.linkedin-logo {
+  max-width: 5vw;
+}
+
+.git-logo {
+  max-width: 7vw;
+}
+
+.email-logo {
+  max-width: 6vw;
 }

@@ -9,7 +9,7 @@ function About() {
         edges {
           node {
             id
-            rawMarkdownBody
+            html
           }
         }
       }
@@ -20,9 +20,10 @@ function About() {
     <div className="about">
       <h1 className="heading">Bronwyn Achemedei</h1>
       {bioData.allMarkdownRemark.edges.map(({ node }) => (
-        <p className="bio-text" key={node.id}>
-          {node.rawMarkdownBody}
-        </p>
+        <div
+          className="bio-text html-text"
+          dangerouslySetInnerHTML={{ __html: node.html }}
+        />
       ))}
     </div>
   )

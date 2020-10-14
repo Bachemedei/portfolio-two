@@ -15,4 +15,4 @@ To complete this project, I needed to learn how to create queries in BigQuery to
 
 Most graph visualisations were constructed with [ggplot](https://ggplot2.tidyverse.org/) and map visualisations were made with [R Leaflet](https://rstudio.github.io/leaflet/)
 
-The actual database was developed using [Shiny Dashboard](https://rstudio.github.io/shinydashboard/). 
+The dashboard was developed using [Shiny Dashboard](https://rstudio.github.io/shinydashboard/). 

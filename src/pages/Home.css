@@ -1,54 +1,60 @@
 #home {
-  padding-top: 3vw;
-  padding-left: 13vw;
-  padding-right: 13vw;
-  padding-bottom: 3vw;
+  padding: 3vw 13vw;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 h1 {
   display: inline-block;
   border-bottom: 0.3vw solid black;
-  font-size: 4vw;
+  font-size: calc(40px + 1vw);
   margin-top: 1vw;
 }
 
 h2 {
   display: inline-block;
   border-bottom: 0.3vw solid black;
-  font-size: 3vw;
+  font-size: calc(30px + 1vw);
 }
 
 h3 {
   margin-top: none;
-  font-size: 2.2vw;
+  font-size: calc(17px + 1vw);
   display: inline-block;
   border: none;
 }
 
 h4 {
   margin-top: none;
-  font-size: 1.8vw;
+  font-size: calc(15px + 1vw);
   display: inline-block;
   border: none;
 }
 
 h5 {
   margin-top: none;
-  font-size: 1.3vw;
+  font-size: calc(13px + 1vw);
   display: inline-block;
   border: none;
 }
 
 p {
-  font-size: 1.3vw;
+  font-size: calc(9px + 1vw);
+  font-weight: 200;
 }
 
 a {
-  font-size: 1.5vw;
+  font-size: calc(13px + 1vw);
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+li {
+  font-size: calc(9px + 1vw);
+  font-weight: 200;
+  margin-bottom: 1vw;
 }
 
 .featured-projects {
@@ -63,7 +69,6 @@ ul {
 
 .sticky-wrapper {
   position: relative;
-  /* height: 5vw; */
 }
 
 .sticky .sticky-inner {
@@ -74,10 +79,7 @@ ul {
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  padding-top: 1vw;
-  padding-left: 13vw;
-  padding-right: 13vw;
-  padding-bottom: 1vw;
+  padding: 1vw 13vw;
   background-color: white;
 }
 .header {
@@ -89,7 +91,46 @@ ul {
   margin-right: 2vw;
 }
 
-@media (max-width: 800px) {
+.html-text a {
+  font-size: calc(9px + 1vw);
+  font-weight: bolder;
+}
+
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 35px;
+  }
+
+  h5 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  a {
+    font-size: 30px;
+  }
+
+  li {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 900px) {
   #home {
     padding-left: 9vw;
     padding-right: 9vw;
@@ -97,26 +138,6 @@ ul {
   .sticky .sticky-inner {
     padding-left: 9vw;
     padding-right: 9vw;
-  }
-
-  h3 {
-    font-size: 2.8vw;
-  }
-
-  h4 {
-    font-size: 2.5vw;
-  }
-
-  h5 {
-    font-size: 2.2vw;
-  }
-
-  a {
-    font-size: 2.5vw;
-  }
-
-  p {
-    font-size: 2vw;
   }
 }
 
