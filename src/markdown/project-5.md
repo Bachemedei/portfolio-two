@@ -9,8 +9,8 @@ url: https://github.com/Bachemedei/django_news
 date: "August 2020"
 ---
 
-To familiarise myself with the Python Django Framework, I created a dummy news website.
+While learning Django, I created a dummy news website - a homage to the OG Django developers. 
 
-Highlights of the website includes a custom user model, flash messages on account creation and deletion of news stories, personal profiles and author profiles.
+Creating this website helped me understand how relational databases can be used for efficient web development. An aspect I really enjoy is using primary keys to link models, and how those methods can be used to dynamically populate the webpage. The "ah-ha moment" was discovering how simple it was to show all the stories (from the "Stories Model") when a logged in user clicks their profile link. 
 
-Skills I developed while working on this project included learning OOP, working with the Django Framework and Authorisation.
+This project also gave me a better understanding of object oriented programming

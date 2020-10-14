@@ -9,9 +9,10 @@ url: https://bachemedei.github.io/Bachemedei/
 date: "June 2020"
 ---
 
-To use my newly developed HTML & CSS skills I build a prototype personal portfolio website. 
-Key features included responsive design to work on a variety of screen sizes, including mobile, styling using Flexbox, and text summaries on image hover.
+The first project I undertook using HTML & CSS was to design a personal website. 
+I used Flexbox for styling the website and media queries to implement responsive design.
 
 The website was deployed using GitHub.
 
-I've since made a new website using ReactJS & Gatsby. You're looking at it right now!
+After learning React, I decided to make a new portfolio using Gatsby. This project helped me to try out my new React skills but also introduced me to using GraphQL to create a data layer in Gatsby. 
+The new version of my portfolio website was deployed with Netlify and you're looking at it right now. It's still a work in progress so if you come back in a few days, things may look a bit different!
