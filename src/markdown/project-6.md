@@ -25,4 +25,4 @@ Once feeling comfortable with using JavaScript to create front-end changes, I ma
 
 I followed up whack-a-mole with two more games - Rock Paper Scissors, and a true classic - Snake. With both of these games, I took a similar incremental approach.
 
-After spending some time learning React, I decided to rewrote whack-a-mole in ReactJS and made it better than ever. 
+After spending some time learning React, I decided to rewrite whack-a-mole in ReactJS and made it better than ever. 

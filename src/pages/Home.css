@@ -8,13 +8,15 @@ h1 {
   display: inline-block;
   border-bottom: 0.3vw solid black;
   font-size: calc(40px + 1vw);
-  margin-top: 1vw;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
 }
 
 h2 {
   display: inline-block;
   border-bottom: 0.3vw solid black;
   font-size: calc(30px + 1vw);
+  margin-top: 8vw;
 }
 
 h3 {
@@ -79,12 +81,23 @@ ul {
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  padding: 1vw 13vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* padding: 1vw 13vw; */
   background-color: white;
 }
+
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
 }
 
 .portfolio-link {
