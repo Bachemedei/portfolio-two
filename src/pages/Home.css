@@ -83,7 +83,6 @@ ul {
   justify-content: space-between;
   max-width: 1000px;
   margin: 0 auto;
-  /* padding: 1vw 13vw; */
   background-color: white;
 }
 
@@ -152,6 +151,11 @@ ul {
     padding-left: 9vw;
     padding-right: 9vw;
   }
+
+  .header {
+    padding-left: 9vw;
+    padding-right: 9vw;
+  }
 }
 
 @media (max-width: 500px) {
@@ -160,6 +164,11 @@ ul {
     padding-right: 5vw;
   }
   .sticky .sticky-inner {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .header {
     padding-left: 5vw;
     padding-right: 5vw;
   }

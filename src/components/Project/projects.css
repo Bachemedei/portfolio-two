@@ -33,7 +33,7 @@
 
 .img-container .project-img {
   max-width: 300px;
-  width: 25vw;
+  width: calc(100px + 10vw);
   margin-right: 2vw;
 }
 
