@@ -1,10 +1,10 @@
 import React from "react"
-import RecentProjects from "../../components/RecentProjects/RecentProjects"
+import WhackAMole from "../../components/WhackAMole/WhackAMole"
 
 function index() {
   return (
     <div>
-      <RecentProjects />
+      <WhackAMole />
     </div>
   )
 }

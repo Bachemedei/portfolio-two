@@ -2,6 +2,9 @@ import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import "./RecentProjects.css"
+import { node } from "prop-types"
+import Button from "../Button/Button"
+import WhackAMole from "../WhackAMole/WhackAMole"
 
 function RecentProjects() {
   const RecentProjects = useStaticQuery(graphql`
@@ -31,10 +34,15 @@ function RecentProjects() {
 
   const profileData = RecentProjects.allMarkdownRemark.edges
   const [projectIndex, setIndex] = useState(0)
-  console.log(profileData[projectIndex].node.frontmatter.title)
+  const [gameActive, setGame] = useState(false)
   const handleClick = index => {
-    // let val = i === parseInt(index) ? null : parseInt(index)
     setIndex(index)
+  }
+
+  const handleGameClick = () => {
+    let gameState = !gameActive
+    setGame(gameState)
+    console.log(gameState)
   }
 
   return (
@@ -67,6 +75,17 @@ function RecentProjects() {
               __html: profileData[projectIndex].node.html,
             }}
           />
+          {profileData[projectIndex].node.frontmatter.project_id === 6 ? (
+            <div className="play-game">
+              <p>Want to play?</p>
+              <a href="https://games.bronwyn.dev">JS Games</a>
+              <p className="fake-link" onClick={handleGameClick}>
+                Whack A Mole 2.0
+              </p>
+            </div>
+          ) : (
+            <></>
+          )}
           <AnchorLink
             to={`/#project${profileData[projectIndex].node.frontmatter.project_id}`}
           >
@@ -74,6 +93,7 @@ function RecentProjects() {
           </AnchorLink>
         </div>
       </div>
+      {gameActive ? <WhackAMole /> : <></>}
     </div>
   )
 }

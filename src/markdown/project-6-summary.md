@@ -10,5 +10,5 @@ Simple games made using vanilla JavaScript - Snake, Whack-A-Mole, and Rock Paper
 * JavaScript
   * Writing & using functions
   * Working with the DOM
-  * Refactoring in React
+  * Recreating in React
 * HTML & CSS

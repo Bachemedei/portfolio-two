@@ -73,19 +73,7 @@ ul {
   position: relative;
 }
 
-.sticky .sticky-inner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: white;
-}
-
+.sticky .sticky-inner,
 .header {
   position: fixed;
   top: 0;
@@ -95,7 +83,8 @@ ul {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0vw auto;
+  padding-top: 1vw;
   background-color: white;
 }
 
