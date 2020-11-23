@@ -6,6 +6,23 @@ button {
 }
 
 .mole-img {
-  width: 300px;
+  position: absolute;
+  height: calc(75px + 10vw);
+  max-height: 200px;
   pointer-events: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .mole-img {
+    height: calc(60px + 20vw);
+    max-height: 2000px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mole-img {
+    height: calc(60px + 15vw);
+  }
 }

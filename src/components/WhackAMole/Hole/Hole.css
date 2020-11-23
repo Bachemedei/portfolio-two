@@ -1,4 +1,21 @@
 .hole {
-  width: 300px;
-  height: 200px;
+  flex: 1 1 160px;
+  position: relative;
+  height: calc(60px + 10vw);
+  max-height: 200px;
+  width: calc(80px + 10vw);
+  border: 1px solid black;
+}
+
+@media (max-width: 1000px) {
+  .hole {
+    height: calc(60px + 20vw);
+    max-height: 2000px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hole {
+    height: calc(60px + 15vw);
+  }
 }

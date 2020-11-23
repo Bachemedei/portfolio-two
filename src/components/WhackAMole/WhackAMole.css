@@ -1,8 +1,13 @@
 .mole-game {
   border: 1px solid black;
   border-radius: 3px;
-  margin-top: 3vw;
   padding-bottom: 3vw;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .game-header {
@@ -13,11 +18,19 @@
 .mole-row {
   display: flex;
   justify-content: space-evenly;
-  max-width: 1000px;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  /* max-width: 1000px; */
+  margin: 0 2vw;
+}
+
+.break {
+  display: block;
+  height: 1px;
+  width: 100%;
 }
 
 .btn-container {
+  margin-top: 4vw;
   display: flex;
   justify-content: center;
 }
@@ -40,4 +53,13 @@
 
 .btn:active {
   outline: none;
+}
+
+@media (min-width: 1000px) {
+  .mole-row {
+    flex-wrap: nowrap;
+  }
+  .break {
+    display: none;
+  }
 }

@@ -1,24 +1,27 @@
 .btn-container {
-    margin: 1vw;
+  margin: 1vw;
 }
 
 .btn {
-    display:inline-block;
-    padding:0.35em 1.2em;
-    border:0.1em solid #efe9e9;
-    margin:0 0.3em 0.3em 0;
-    border-radius:0.5em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:#efe9e9;
-    text-align:center;
-    transition: all 0.2s;
-    background-color: black
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #efe9e9;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: calc(0.5vw + 10px);
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: lightgrey;
+  box-shadow: rgba(106, 108, 124, 0.5) 5px 5px 7.5px -1.25px,
+    white -5px -5px 7.5px -1.25px;
 }
 
 .btn:hover {
-    color:#000000;
-    background-color: lightgray;
+  color: #000000;
+  background-color: lightgray;
 }

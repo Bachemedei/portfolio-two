@@ -1,4 +1,4 @@
-import React, { Fragement, useState, useEffect, useRef } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import Header from "../components/header/header"
 import "../components/layout.css"
 import About from "../components/About/About"
@@ -6,6 +6,8 @@ import RecentProjects from "../components/RecentProjects/RecentProjects"
 import "./Home.css"
 import AllProjects from "../components/Portfolio/AllProjects"
 import Contact from "../components/Contact/Contact"
+import Intro from "../components/Intro/Intro"
+import FeaturedProjects from "../components/FeaturedProjects/FeaturedProjects"
 
 function Home() {
   // Variables
@@ -27,13 +29,15 @@ function Home() {
 
   // Template
   return (
-    <div id="home">
+    <div id="home" className="page">
       <div className={`sticky-wrapper${isSticky ? " sticky" : ""}`} ref={ref}>
         <Header />
       </div>
+      <Intro />
+      <FeaturedProjects />
       <About />
-      <RecentProjects />
-      <AllProjects />
+      {/* <RecentProjects /> */}
+      {/* <AllProjects /> */}
       <Contact />
     </div>
   )

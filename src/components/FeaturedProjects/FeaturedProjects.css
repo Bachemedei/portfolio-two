@@ -1,0 +1,6 @@
+.featured-projects {
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

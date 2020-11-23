@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-import { rhythm } from "../../utils/typography"
 import "./header.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
@@ -13,7 +11,7 @@ function Header() {
         </AnchorLink>
       </div>
       <div className="nav-links">
-        <AnchorLink className="portfolio-link" to="/#portfolio">
+        <AnchorLink className="portfolio-link" to="/portfolio">
           Portfolio
         </AnchorLink>
         <AnchorLink className="contact-link" to="/#contact">

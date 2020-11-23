@@ -1,0 +1,50 @@
+.page-top {
+  position: relative;
+  width: 100%;
+  height: 25vw;
+  margin: 5vw 0;
+}
+
+.page-top > * {
+  position: absolute;
+}
+
+.page-top .heading {
+  z-index: 1;
+  top: 0;
+  left: 2vw;
+  width: 40%;
+  border: none;
+  text-decoration: underline;
+}
+
+.page-top .logo {
+  height: 30vw;
+  z-index: 0;
+  top: 0;
+  left: 33vw;
+}
+
+.page-top .intro-text {
+  z-index: 1;
+  top: 17vw;
+  left: 2vw;
+  width: 50%;
+}
+
+.about-link-container {
+  display: flex;
+  align-items: center;
+  /* margin: 0 2vw; */
+  margin-top: 2vw;
+}
+
+.about-link-container .about-link-p {
+  margin-bottom: 0;
+  margin-right: 0.5vw;
+  font-size: calc(9px + 1vw);
+}
+
+.about-link-container a {
+  font-size: calc(9px + 1vw);
+}

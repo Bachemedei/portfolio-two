@@ -1,4 +1,4 @@
-#home {
+.page {
   padding: 3vw 13vw;
   max-width: 1300px;
   margin: 0 auto;
@@ -79,7 +79,7 @@ ul {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   max-width: 1000px;

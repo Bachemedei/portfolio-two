@@ -4,9 +4,9 @@ import "./Button.css"
 
 function Button({ value }) {
   return (
-    <form className="btn-container">
-      <input className="btn" type="submit" value={value} />
-    </form>
+    <div className="btn-container">
+      <button className="btn">{value}</button>
+    </div>
   )
 }
 

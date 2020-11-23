@@ -3,12 +3,13 @@ title: "Earlyadoptr"
 project: true
 summary: true
 project-id: 7
+featuredImage: ../images/earlyadoptr.png
 date: "October 2020"
 ---
 
-A prototype of a crowdfunding platform for supporting animal rescue organisations with adoption costs.
-The backend was developed using Django Rest Framework and the frontend was developed with ReactJS. The tech stack of this project consists of:
+A prototype crowdfunding platform using DRF for the backend & React for the frontend.
+<!-- The tech stack of this project consists of:
 * Django Rest Framework
 * React JS (Functional components & Hooks)
 * HTML & CSS
-* Deployment with Heroku
+* Deployment with Heroku -->
