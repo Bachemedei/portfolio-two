@@ -3,7 +3,7 @@ title: "Prototype Portfolio Website"
 project: true
 project-id: 3
 summary: false
-featuredImage: ../images/portfolio.png
+featuredImage: ../images/project3.png
 language: "HTML, CSS"
 url: https://bachemedei.github.io/Bachemedei/
 date: "June 2020"

@@ -3,7 +3,7 @@ title: "JavaScript Games"
 project: true
 project-id: 6
 summary: true
-featuredImage: ../images/snake.png
+featuredImage: ../images/project6.png
 date: "September 2020"
 ---
 

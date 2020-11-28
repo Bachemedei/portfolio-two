@@ -3,7 +3,7 @@ title: "Data Analytics Dashboard"
 project: true
 project-id: 1
 summary: false
-featuredImage: ../images/shiny.png
+featuredImage: ../images/project1.png
 language: "R, R Shiny"
 url: undefined
 date: "October 2019"

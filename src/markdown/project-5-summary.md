@@ -3,7 +3,7 @@ title: "Django News"
 project: true
 project-id: 5
 summary: true
-featuredImage: ../images/django_news.png
+featuredImage: ../images/project5.png
 date: "August 2020"
 ---
 

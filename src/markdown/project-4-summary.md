@@ -3,7 +3,7 @@ title: "Python Weather"
 project: true
 project-id: 4
 summary: true
-featuredImage: ../images/python-weather.png
+featuredImage: ../images/project4.png
 date: "July 2020"
 ---
 

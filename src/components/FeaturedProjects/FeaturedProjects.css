@@ -4,3 +4,10 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+.img-carousel {
+  width: 50%;
+  margin: 0 auto;
+}
+.control-dots {
+  background-color: transparent;
+}

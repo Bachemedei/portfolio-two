@@ -3,7 +3,7 @@ title: "JavaScript Games"
 project: true
 project-id: 6
 summary: false
-featuredImage: ../images/snake.png
+featuredImage: ../images/project6.png
 language: "JavaScript, ReactJS"
 url: https://github.com/Bachemedei/jsexercises
 date: "September 2020"

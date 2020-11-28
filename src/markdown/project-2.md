@@ -3,7 +3,7 @@ title: "Device Bot"
 project-id: 2
 project: true
 summary: false
-featuredImage: ../images/slackbot.png
+featuredImage: ../images/project2.png
 language: "JavaScript, Node JS"
 url: undefined
 date: "November 2019"

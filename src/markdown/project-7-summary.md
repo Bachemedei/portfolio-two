@@ -3,7 +3,7 @@ title: "Earlyadoptr"
 project: true
 summary: true
 project-id: 7
-featuredImage: ../images/earlyadoptr.png
+featuredImage: ../images/project7.png
 date: "October 2020"
 ---
 

@@ -48,22 +48,6 @@
   justify-content: center;
 }
 
-.selected {
-  border-bottom: 1px solid black;
-}
-
-.selected::after {
-  width: calc(100% + 30px);
-  display: block;
-  content: "";
-  background: #d4a405;
-  margin-top: -2.5rem;
-  margin-left: -10px;
-  height: calc(100% + 30px);
-  position: absolute;
-  z-index: -1;
-}
-
 .date {
   font-weight: 900;
 }
