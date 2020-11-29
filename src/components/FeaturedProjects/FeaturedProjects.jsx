@@ -52,7 +52,7 @@ function FeaturedProjects() {
   }))
   console.log(projectData)
   return (
-    <div>
+    <div className="featured-projects">
       <h2 className="projects-title">Featured Projects</h2>
       {/* <div className="featured-projects">
         {data.map(({ node }) => (
