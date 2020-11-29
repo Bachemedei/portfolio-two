@@ -1,7 +1,7 @@
 ---
 title: "Earlyadoptr - A Crowdfunding Platform"
 project: true
-summary: false
+summary: "A prototype crowdfunding platform using DRF for the backend & React for the frontend."
 project-id: 7
 featuredImage: ../images/project7.png
 language: "Python, Django Rest Framework, ReactJS, CSS"

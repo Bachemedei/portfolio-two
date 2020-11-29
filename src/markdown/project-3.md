@@ -2,7 +2,7 @@
 title: "Prototype Portfolio Website"
 project: true
 project-id: 3
-summary: false
+summary: "The first portfolio and website I made."
 featuredImage: ../images/project3.png
 language: "HTML, CSS"
 url: https://bachemedei.github.io/Bachemedei/

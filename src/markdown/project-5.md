@@ -2,7 +2,7 @@
 title: "News Website with Django"
 project: true
 project-id: 5
-summary: false
+summary: "A dummy news website made with Django."
 featuredImage: ../images/project5.png
 language: "Python, Django"
 url: https://github.com/Bachemedei/django_news

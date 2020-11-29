@@ -10,9 +10,7 @@ function RecentProjects() {
   const RecentProjects = useStaticQuery(graphql`
     query RecentProjectQuery {
       allMarkdownRemark(
-        filter: {
-          frontmatter: { summary: { eq: true }, project: { eq: true } }
-        }
+        filter: { frontmatter: { project: { eq: true } } }
         sort: { order: DESC, fields: frontmatter___project_id }
       ) {
         edges {
@@ -23,7 +21,6 @@ function RecentProjects() {
               project_id
               title
               language
-              summary
               date
             }
           }

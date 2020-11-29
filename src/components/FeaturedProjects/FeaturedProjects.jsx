@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Img from "gatsby-image"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
@@ -10,9 +11,8 @@ function FeaturedProjects() {
   const projectSummaries = useStaticQuery(graphql`
     query ImageQuery {
       allMarkdownRemark(
-        filter: {
-          frontmatter: { summary: { eq: true }, project: { eq: true } }
-        }
+        filter: { frontmatter: { project: { eq: true } } }
+        sort: { order: DESC, fields: frontmatter___project_id }
       ) {
         edges {
           node {
@@ -46,7 +46,7 @@ function FeaturedProjects() {
     // image: node.frontmatter.featuredImage.childImageSharp.fluid.src,
     image: require(`../../images/project${node.frontmatter.project_id}.png`),
     // image: require("../../images/project1.png"),
-    summary: node.html,
+    summary: node.frontmatter.summary,
     title: node.frontmatter.title,
     id: node.frontmatter.project_id,
   }))
@@ -73,12 +73,14 @@ function FeaturedProjects() {
           {projectData.map(project => (
             <div>
               <img src={project.image} alt="img" />
-              <p
-                className="legend"
-                dangerouslySetInnerHTML={{
-                  __html: project.summary,
-                }}
-              ></p>
+              <AnchorLink to={`/portfolio/#project${project.id}`}>
+                <p
+                  className="legend"
+                  dangerouslySetInnerHTML={{
+                    __html: project.summary,
+                  }}
+                ></p>
+              </AnchorLink>
             </div>
           ))}
         </Carousel>

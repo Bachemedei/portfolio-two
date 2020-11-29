@@ -2,7 +2,7 @@
 title: "Python Weather Data Analysis"
 project: true
 project-id: 4
-summary: false
+summary: "A Python script to analyse scraped weather data, producing visualisations and human-readable summaries."
 featuredImage: ../images/project4.png
 language: "Python"
 url: https://github.com/Bachemedei/python-project

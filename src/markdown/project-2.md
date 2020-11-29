@@ -2,7 +2,7 @@
 title: "Device Bot"
 project-id: 2
 project: true
-summary: false
+summary: "A slackbot for tracking test devices."
 featuredImage: ../images/project2.png
 language: "JavaScript, Node JS"
 url: undefined

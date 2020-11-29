@@ -7,9 +7,7 @@ function AllProjects() {
   const AllProjects = useStaticQuery(graphql`
     query ProjectQuery {
       allMarkdownRemark(
-        filter: {
-          frontmatter: { summary: { eq: false }, project: { eq: true } }
-        }
+        filter: { frontmatter: { project: { eq: true } } }
         sort: { order: DESC, fields: frontmatter___project_id }
       ) {
         edges {

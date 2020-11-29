@@ -2,7 +2,7 @@
 title: "JavaScript Games"
 project: true
 project-id: 6
-summary: false
+summary: "Simple games made using vanilla JavaScript - Snake, Whack-A-Mole, and Rock Paper Scissors."
 featuredImage: ../images/project6.png
 language: "JavaScript, ReactJS"
 url: https://github.com/Bachemedei/jsexercises

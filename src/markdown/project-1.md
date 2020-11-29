@@ -2,7 +2,7 @@
 title: "Data Analytics Dashboard"
 project: true
 project-id: 1
-summary: false
+summary: "A data analytics dashboard built using R Shiny."
 featuredImage: ../images/project1.png
 language: "R, R Shiny"
 url: undefined
