@@ -1,0 +1,18 @@
+.language-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vw 0;
+}
+
+.language-tag {
+  color: black;
+  background-color: #f5f5f5;
+  font-size: calc(0.5vw + 10px);
+  width: fit-content;
+  padding: calc(0.2vw + 5px);
+  border-radius: 3px;
+  border: 1px solid #f5f5f5;
+  margin-right: 1vw;
+  box-shadow: rgba(106, 108, 124, 0.5) 5px 5px 7.5px -1.25px,
+    white -5px -5px 7.5px -1.25px;
+}

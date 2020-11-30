@@ -1,16 +1,16 @@
-button {
+.mole-btn {
   background: transparent;
   border: none !important;
   font-size: 0;
   cursor: pointer;
+  position: absolute;
 }
 
 .mole-img {
-  position: absolute;
   height: calc(75px + 10vw);
   max-height: 200px;
   pointer-events: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 

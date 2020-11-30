@@ -2,7 +2,6 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Logo from "../../images/logo.png"
 import "./Intro.css"
-import Button from "../Button/Button"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 function Intro() {
@@ -20,6 +19,7 @@ function Intro() {
       }
     }
   `)
+
   return (
     <div className="intro">
       <div className="page-top">

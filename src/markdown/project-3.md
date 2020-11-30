@@ -5,7 +5,7 @@ project-id: 3
 summary: "The first portfolio and website I made."
 featuredImage: ../images/project3.png
 language: "HTML, CSS"
-url: https://bachemedei.github.io/Bachemedei/
+url: https://games.bronwyn.dev
 date: "June 2020"
 ---
 

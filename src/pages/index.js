@@ -2,9 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import Header from "../components/header/header"
 import "../components/layout.css"
 import About from "../components/About/About"
-import RecentProjects from "../components/RecentProjects/RecentProjects"
 import "./Home.css"
-import AllProjects from "../components/Portfolio/AllProjects"
 import Contact from "../components/Contact/Contact"
 import Intro from "../components/Intro/Intro"
 import FeaturedProjects from "../components/FeaturedProjects/FeaturedProjects"
@@ -33,11 +31,9 @@ function Home() {
       <div className={`sticky-wrapper${isSticky ? " sticky" : ""}`} ref={ref}>
         <Header />
       </div>
-      <Intro />
+      <Intro/>
       <FeaturedProjects />
       <About />
-      {/* <RecentProjects /> */}
-      {/* <AllProjects /> */}
       <Contact />
     </div>
   )

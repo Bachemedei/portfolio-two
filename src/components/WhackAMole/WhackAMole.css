@@ -1,8 +1,6 @@
 .mole-game {
-  border: 1px solid black;
-  border-radius: 3px;
   padding-bottom: 3vw;
-  margin: 0 auto;
+  margin: 5vw auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -43,6 +41,7 @@
   font-size: 16px;
   padding: 14px 40px;
   transition-duration: 0.4s;
+  border: none !important;
   /* margin: 10px; */
 }
 
@@ -51,8 +50,9 @@
   color: black;
 }
 
-.btn:active {
-  outline: none;
+.btn:active .btn:focus .btn:hover {
+  outline: none !important;
+  border: none !important;
 }
 
 @media (min-width: 1000px) {

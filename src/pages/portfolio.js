@@ -4,7 +4,7 @@ import AllProjects from "../components/Portfolio/AllProjects"
 import "./Home.css"
 
 function Portfolio() {
-    const [isSticky, setSticky] = useState(false)
+  const [isSticky, setSticky] = useState(false)
   const ref = useRef(null)
   const handleScroll = () => {
     if (ref.current) {

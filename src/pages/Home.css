@@ -53,6 +53,11 @@ a:hover {
   text-decoration: underline;
 }
 
+button:focus {
+  border: none !important;
+  outline: none !important;
+}
+
 li {
   font-size: calc(9px + 1vw);
   font-weight: 200;
@@ -67,6 +72,14 @@ ul {
   position: relative;
 }
 
+.header-logo {
+  height: calc(5vw + 15px);
+  max-height: 65px;
+  margin-left: 10vw;
+  margin-top: 1vw;
+  margin-bottom: 0;
+}
+
 .sticky .sticky-inner,
 .header {
   position: fixed;
@@ -76,9 +89,9 @@ ul {
   z-index: 2;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1000px;
   margin: 0vw auto;
-  padding-top: 1vw;
   background-color: white;
 }
 
@@ -154,5 +167,11 @@ ul {
   .header {
     padding-left: 5vw;
     padding-right: 5vw;
+  }
+}
+
+@media (max-width: 350px) {
+  .header-logo {
+    height: 0px;
   }
 }

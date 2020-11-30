@@ -1,6 +1,7 @@
 import React from "react"
 import "./header.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import Logo from "../../images/logo.png"
 
 function Header() {
   return (
@@ -10,6 +11,7 @@ function Header() {
           <span>Home</span>
         </AnchorLink>
       </div>
+      <img className="header-logo" src={Logo} alt="logo" />
       <div className="nav-links">
         <AnchorLink className="portfolio-link" to="/portfolio">
           Portfolio

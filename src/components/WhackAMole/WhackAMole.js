@@ -87,13 +87,10 @@ function WhackAMole() {
             <Mole onClick={e => handleClick(e, 3)}></Mole>
           ) : null}
         </Hole>
-        {/* <Hole>
+        <Hole>
           {mole.hole === 4 && mole.isVisible === true ? (
             <Mole onClick={e => handleClick(e, 4)}></Mole>
           ) : null}
-        </Hole> */}
-        <Hole>
-          <Mole />
         </Hole>
       </div>
       <div className="btn-container">
